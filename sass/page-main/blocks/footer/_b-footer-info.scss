@@ -1,0 +1,46 @@
+footer { 
+  margin-top: 71px;
+  background-color: $color-bg-header;
+}
+
+.b-footer-info {
+  margin-top: 20px;
+  font-size: $font-M;
+  @extend %clearfix;
+  .rights,
+  .authors {
+    margin-top: 44px;
+    box-sizing: border-box;
+    float: left;
+    height: 226px; /* height + margin-top + .hr-line = 280px */
+    width: 50%;
+  }
+  
+  .rights {
+    padding-top: 1px;
+    p {
+      margin-top: 16px;
+      color: $color-font-2;
+    }
+  }
+  
+  .authors {
+    padding-left: 50px;
+    line-height: 18px;
+    .authors-list {
+      li {
+        list-style: none;
+        &:nth-of-type(2) { margin-top: 10px; }
+        &:nth-of-type(7) { margin-top: 39px; }
+        &:last-of-type { 
+          margin-top: 10px; 
+          a { text-transform: uppercase; }
+        }
+        span {
+          color: $color-font-2;
+        }
+      }
+    }
+  }
+}
+

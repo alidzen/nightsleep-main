@@ -1,0 +1,35 @@
+.b-activities {
+  @extend %clearfix;
+  [class^="action-"] {
+    float: left;
+    width: 320px;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 48px;
+    font-size: $font-M;
+    
+  }
+  
+  
+  .action-title {
+    margin-left: 0;
+    padding-top: 16px;
+    h2 { font-size: $font-XXXL-smaller; }
+    p {
+      &:first-of-type {
+        margin-top: 23px;
+      }
+    }
+
+  }
+  
+  .action-1,
+  .action-2 { 
+    p {
+      padding-top: 12px;
+      padding-left: 12px;
+    }
+  }
+}

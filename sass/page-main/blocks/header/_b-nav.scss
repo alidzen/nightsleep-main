@@ -1,0 +1,39 @@
+.b-nav {
+  width: 100%;
+  background-color: $color-bg-header;
+  background-size: cover;
+}
+
+.nav-list {
+  height: 50px;
+  padding-top: 5px;
+  font-size: $font-SL;
+  color: $color-font-main;
+  &:before { /* Выравниваем блок по центру */
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  li {
+    display: inline-block;
+    .active { color: $color-font-2; }
+    
+    &:first-of-type {
+      margin-left: 21px;
+      color: $color-white;
+    }
+    
+    &:nth-child(2) { margin-left: 115px; }
+    &:nth-child(3) { margin-left: 115px; }
+    &:nth-child(4) { margin-left: 98px; }
+    &:nth-child(5) { margin-left: 98px; }
+    &:nth-child(6) { margin-left: 108px; }
+    
+    a {
+      color: $color-font-main;
+      text-transform: uppercase;
+      font-weight: $font-weight-bold;
+    }
+  }
+}

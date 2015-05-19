@@ -1,0 +1,86 @@
+.b-questions-lawyer {
+  margin-top: 22px;
+  font-size: $font-M;
+  .header {
+    padding-bottom: 3px;
+    border-bottom: 1px dashed $color-font-2;
+    h1 { 
+      display: inline-block;
+      font-size: $font-XL-bigger;
+    }
+    .btn-lawyer {
+      float: right;
+      margin-top: 19px;
+      background-color: #ffe36e;
+      padding: 7px 22px;
+      border-radius: 0;
+      color: $color-font-main;
+      letter-spacing: .6px;
+    }
+  }
+  p {
+    &:first-of-type { margin-top: 14px; }
+    padding-bottom: 15px;
+    line-height: 20px;
+    border-bottom: 1px dashed $color-font-2;
+    &:last-of-type {
+      margin-top: 27px;
+      border: none;
+    }
+    span { color: $color-font-2; }
+  }
+}
+
+
+.lawyer-form {
+  padding: 32px 25px 18px;
+  font-size: $font-M;
+  background: $color-bg-header;
+  h3 { 
+    font-size: $font-L;
+    font-weight: $font-weight-bold;
+  }
+  p { 
+    border: none; 
+    &:last-of-type {
+    }
+  }
+  textarea {
+    width: 99%;
+  }
+  textarea,
+  input { padding: 5px; }
+  ul {
+    margin-top: 10px;
+    padding: 0;
+    li { 
+      display: inline-block;
+      &:nth-child(2n) { 
+        margin-left: 10px;
+        color: $color-font-2;
+      }
+    }
+  }
+  input,
+  submit { 
+    width: 280px;
+  }
+  .btn-lawyer {
+    width: 280px;
+    display: block;
+    margin-top: 10px;
+    background-color: #ffe36e;
+    padding: 7px 22px;
+    border-radius: 0;
+    color: $color-font-main;
+    letter-spacing: .6px;
+  }
+  
+  .success,
+  .error { display: none; }
+  
+  .success>p {
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,65 @@
+/* Задаем общие стили для блоков */
+.b-info {
+  margin-top: 65px;
+  @extend %clearfix;
+  h3 { font-size: $font-XL-bigger; }
+  h4,
+  p { 
+    font-size: $font-M; 
+    line-height: 21px;
+    letter-spacing: .2px;
+  }
+  p { 
+    margin-top: 29px;
+    line-height: 24px;
+  }
+  [class^="block-"] {
+    float: left;
+    box-sizing: border-box;
+    width: 478px;
+    height: 470px;
+    padding: 12px 11px 18px 28px;
+    border: 3px solid $color-3;
+  }
+  .content {
+    position: relative;
+    margin-top: 29px;
+    padding-left: 146px;
+    img {
+      position: absolute;
+      left: 0;
+    }
+  }
+  .footer {
+    font-size: $font-L;
+  }
+}
+
+/* Корректировки блоков */
+.b-info {
+  .block-1 {
+    .footer { 
+      margin-top: 30px; 
+      line-height: 21px;
+    }
+  }
+}
+
+.b-info {
+  .block-2 {
+    margin-left: 46px;
+    h3 {
+      line-height: 32px;
+      letter-spacing: .5px;
+    }
+    h4 { line-height: 24px; }
+    p { margin-top: 23px; }
+    .content { margin-top: 23px; }
+    .footer { 
+      margin-top: 66px; 
+      letter-spacing: .5px;
+    }
+  }
+}
+
+

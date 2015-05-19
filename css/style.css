@@ -1,0 +1,905 @@
+@charset "UTF-8";
+/* Compass */
+/* Base */
+/*=======================================
+   Settings. Задаем переменные.
+======================================= */
+/* Font-size */
+.font-M {
+  font-size: 16px;
+}
+
+/* ссылка в features content */
+/* h3 в b-sms-mail, h3 b-info  */
+/* H2 b-activities */
+/* Главный заголовок */
+/* Font-weight */
+/* Colors */
+/* Белый фон  */
+/* Основнйо зеленый */
+/* Светло-зеленый (подложки) +25% */
+/* Основной желтый */
+/* header * footer bg */
+/* белый текст текст */
+/* Цвет подложки на главной странице, в блоке помочь деньгами */
+/* Colors font*/
+/* Черный */
+/* Серый */
+/* Синий, ссылки */
+/* Светло-зеленый, в шапке */
+/* Typograthy */
+/* Шрифт остального текста */
+/*=====================================
+   Base styles. Задаем переменные, заголовки, body и прочее  по умолчанию.
+===================================== */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #f5f5f5;
+  color: #131313;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Helvetica", sans-serif;
+  line-height: 18px;
+}
+
+a {
+  color: #0084f2;
+}
+
+li {
+  list-style: none;
+}
+
+.inner-wrapper,
+.inner-wrapper-header {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.inner-wrapper {
+  padding: 0 99px;
+}
+
+.wrapper-fix {
+  /* Прижимает footer */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -350px;
+}
+
+.wrapper-fix__push,
+footer {
+  height: 350px;
+}
+
+.b-unit-features, .b-activities, .b-last-news, .b-subscribe, .b-help, .b-souvenir, .b-footer-info {
+  /* Fix для float элементов */
+}
+.b-unit-features:before, .b-activities:before, .b-last-news:before, .b-subscribe:before, .b-help:before, .b-souvenir:before, .b-footer-info:before, .b-unit-features:after, .b-activities:after, .b-last-news:after, .b-subscribe:after, .b-help:after, .b-souvenir:after, .b-footer-info:after {
+  content: "";
+  display: table;
+}
+.b-unit-features:after, .b-activities:after, .b-last-news:after, .b-subscribe:after, .b-help:after, .b-souvenir:after, .b-footer-info:after {
+  clear: both;
+}
+
+/* Декоративные элементы */
+.noactive-color {
+  /* тусклый цвет */
+  color: #808080;
+}
+
+.hr-line {
+  width: 100%;
+  border-top: 1px solid #dedede;
+}
+
+/*
+* END Base styles.
+*
+*/
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/HelveticaRegular.eot");
+  src: url("/fonts/HelveticaRegular.woff") format("woff"), url("/fonts/HelveticaRegular.ttf") format("truetype"), url("/fonts/HelveticaRegular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/HelveticaBold.eot");
+  src: url("/fonts/HelveticaBold.woff") format("woff"), url("/fonts/HelveticaBold.ttf") format("truetype"), url("/fonts/HelveticaBold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/HelveticaLight.eot");
+  src: url("/fonts/HelveticaLight.woff") format("woff"), url("/fonts/HelveticaLight.ttf") format("truetype"), url("/fonts/HelveticaLight.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+/* Выпадающие блоки */
+.well {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  background-color: inherit;
+  border-radius: 0;
+}
+
+/* changed bootstrap classes */
+/* Utilities */
+/* =====================================
+   Utilities.
+==================================== */
+/* Спрайты */
+.social,
+.arrow-left,
+.arrow-right,
+.mail-icon,
+.icon {
+  display: block;
+}
+
+.fb-header {
+  width: 22px;
+  height: 22px;
+  background: url('/img/icons-s11a4ce4c51.png') -104px 0;
+}
+
+.vk-header {
+  width: 22px;
+  height: 22px;
+  background: url('/img/icons-s11a4ce4c51.png') -669px 0;
+}
+
+.inst-header {
+  width: 22px;
+  height: 22px;
+  background: url('/img/icons-s11a4ce4c51.png') -306px 0;
+}
+
+.flag-rus {
+  width: 30px;
+  height: 20px;
+  background: url('/img/icons-s11a4ce4c51.png') -249px 0;
+}
+
+.vk-color {
+  width: 17px;
+  height: 17px;
+  background: url('/img/icons-s11a4ce4c51.png') -647px 0;
+}
+
+.fb-color {
+  width: 17px;
+  height: 17px;
+  background: url('/img/icons-s11a4ce4c51.png') -82px 0;
+}
+
+.inst-color {
+  width: 17px;
+  height: 17px;
+  background: url('/img/icons-s11a4ce4c51.png') -284px 0;
+}
+
+.arrow-left {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background: url('/img/icons-s11a4ce4c51.png') 0 0;
+}
+
+.arrow-right {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background: url('/img/icons-s11a4ce4c51.png') -41px 0;
+}
+
+.mail-icon {
+  width: 42px;
+  height: 42px;
+  background: url("/img/icons-s171e2ca784.png") -366px 0;
+  background-size: cover;
+}
+
+/* Blocks */
+/* HEader */
+.b-header-banner {
+  min-width: 100%;
+  background: #5aa141;
+  background-size: 100%;
+}
+
+.banner-list {
+  height: 35px;
+  font-size: 14px;
+  margin: 0;
+}
+.banner-list:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.banner-list li {
+  display: inline-block;
+}
+.banner-list li:first-of-type {
+  margin-left: 40px;
+  color: #ffffff;
+}
+.banner-list li:nth-of-type(2) {
+  margin-left: 105px;
+}
+.banner-list li:last-of-type {
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 155px;
+}
+.banner-list .btn-header {
+  background-color: #ffdf5c;
+  border-bottom: 2px solid #e8c319;
+  padding: 2px 23px 2px;
+}
+
+.b-nav {
+  width: 100%;
+  background-color: #e5e5e5;
+  background-size: cover;
+}
+
+.nav-list {
+  height: 50px;
+  padding-top: 5px;
+  font-size: 14px;
+  color: #131313;
+}
+.nav-list:before {
+  /* Выравниваем блок по центру */
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.nav-list li {
+  display: inline-block;
+}
+.nav-list li .active {
+  color: #808080;
+}
+.nav-list li:first-of-type {
+  margin-left: 21px;
+  color: #ffffff;
+}
+.nav-list li:nth-child(2) {
+  margin-left: 115px;
+}
+.nav-list li:nth-child(3) {
+  margin-left: 115px;
+}
+.nav-list li:nth-child(4) {
+  margin-left: 98px;
+}
+.nav-list li:nth-child(5) {
+  margin-left: 98px;
+}
+.nav-list li:nth-child(6) {
+  margin-left: 108px;
+}
+.nav-list li a {
+  color: #131313;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.b-header-title {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 55px;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.b-header-title .content-left {
+  margin-left: 39px;
+  text-align: left;
+}
+.b-header-title .content-center {
+  margin-top: 6px;
+}
+.b-header-title .content-center p {
+  margin-top: 16px;
+  padding: 0 22px;
+}
+.b-header-title .content-right {
+  margin-right: 39px;
+  text-align: right;
+}
+.b-header-title .content-right .social-list li {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.b-slider-header {
+  margin-top: 20px;
+}
+.b-slider-header .carousel-inner {
+  height: 400px;
+}
+.b-slider-header .carousel-caption {
+  padding: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.b-slider-header .caption-content {
+  margin: 0 auto;
+  padding: 10px;
+}
+.b-slider-header .caption-content--with-btn {
+  position: relative;
+  padding-left: 39px;
+  padding-right: 25px;
+  text-align: left;
+  letter-spacing: .4px;
+}
+.b-slider-header .caption-content--with-btn h3 {
+  padding-right: 250px;
+  font-weight: 700;
+}
+.b-slider-header .caption-content--with-btn p {
+  padding-right: 250px;
+  font-size: 18px;
+}
+.b-slider-header .caption-content--with-btn .btn-help {
+  position: absolute;
+  right: 42px;
+  top: 14px;
+  padding: 11px 51px;
+  background-color: #6bae52;
+  border-radius: 0;
+  font-weight: 700;
+  color: #f5f5f5;
+}
+.b-slider-header .carousel-control.right,
+.b-slider-header .carousel-control.left {
+  background-image: none;
+}
+.b-slider-header .carousel-control {
+  width: auto;
+  opacity: 1;
+}
+.b-slider-header .carousel-control .arrow {
+  position: relative;
+  top: 200px;
+  margin-top: -18px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Main */
+.b-main-title {
+  position: relative;
+  width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 20px;
+}
+.b-main-title h1 {
+  position: relative;
+  display: inline-block;
+  margin-top: 47px;
+  font-size: 44px;
+  z-index: 99;
+}
+.b-main-title h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  background-color: #ffdf5c;
+  z-index: -1;
+}
+.b-main-title p {
+  font-size: 16px;
+}
+
+.b-unit-features [class^="feature-block-"] {
+  float: left;
+  width: 320px;
+  height: 190px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 2px solid #ffdf5c;
+  font-size: 16px;
+  padding: 2px 21px 0;
+}
+.b-unit-features .feature-block-1 h3 {
+  padding-bottom: 26px;
+}
+.b-unit-features .feature-block-1,
+.b-unit-features .feature-block-4 {
+  margin-left: 0;
+}
+.b-unit-features .feature-block-6 {
+  border-color: #dedede;
+}
+.b-unit-features h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.b-activities [class^="action-"] {
+  float: left;
+  width: 320px;
+  height: 250px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 48px;
+  font-size: 16px;
+}
+.b-activities .action-title {
+  margin-left: 0;
+  padding-top: 16px;
+}
+.b-activities .action-title h2 {
+  font-size: 42px;
+}
+.b-activities .action-title p:first-of-type {
+  margin-top: 23px;
+}
+.b-activities .action-1 p,
+.b-activities .action-2 p {
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+.b-last-news {
+  margin-top: 33px;
+  font-size: 16px;
+}
+.b-last-news h3 {
+  font-size: 28px;
+}
+.b-last-news [class^="news-"] {
+  position: relative;
+  float: left;
+  width: 230px;
+  height: 260px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 27px;
+}
+.b-last-news [class^="news-"] p {
+  line-height: 20px;
+}
+.b-last-news [class^="news-"] p:first-of-type {
+  margin-top: 5px;
+}
+.b-last-news [class^="news-"] .date {
+  position: absolute;
+  left: 2px;
+  bottom: 3px;
+}
+.b-last-news .news-1 {
+  margin-left: 0;
+}
+
+.b-subscribe {
+  margin-top: 37px;
+  padding: 10px 0;
+  border: 1px solid #e6e6e6;
+}
+.b-subscribe .mail-icon {
+  margin-top: 0;
+  margin-left: 25px;
+}
+.b-subscribe .subscribe .navbar-text {
+  font-size: 18px;
+  line-height: 11px;
+}
+.b-subscribe .subscribe .navbar-text span {
+  font-size: 16px;
+}
+.b-subscribe .subscribe form {
+  margin-top: 2px;
+  margin-left: 35px;
+}
+.b-subscribe .subscribe form input,
+.b-subscribe .subscribe form button {
+  color: #131313;
+  border-radius: 0;
+}
+.b-subscribe .subscribe form input {
+  width: 271px;
+  height: 44px;
+  border: 1px solid #b3b3b3;
+}
+.b-subscribe .subscribe form button {
+  width: 160px;
+  height: 44px;
+  margin-left: 14px;
+  font-weight: 700;
+  border: none;
+  background-color: #ffdf5c;
+}
+.b-subscribe .success {
+  display: none;
+}
+.b-subscribe .error {
+  display: none;
+}
+
+/* Задаем общие стили для блоков */
+.b-help {
+  margin-top: 70px;
+  padding-top: 32px;
+  /* Растягивает бэкграунд двух блоков вверх */
+  font-size: 18px;
+  background-color: #e5e5e5;
+}
+.b-help .title {
+  position: relative;
+  width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 20px;
+}
+.b-help .title h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 44px;
+  z-index: 99;
+}
+.b-help .title h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  background-color: #ffdf5c;
+  z-index: -1;
+}
+.b-help h3 {
+  font-size: 28px;
+}
+.b-help [class^="block-"] {
+  float: left;
+  box-sizing: border-box;
+  width: 478px;
+  height: 563px;
+  margin-top: 44px;
+  padding-top: 10px;
+  padding-left: 38px;
+}
+.b-help .block-1 {
+  border: 3px solid #6bae52;
+  background-color: #ffffff;
+}
+.b-help .block-1 .contetn-1 {
+  margin-top: 5px;
+}
+.b-help .block-1 .content-2 {
+  margin-top: 35px;
+}
+.b-help .block-1 .content-2 img {
+  margin-top: 10px;
+}
+.b-help .block-1 .content-2 > p {
+  margin-top: 26px;
+  line-height: 22px;
+}
+.b-help .block-2 {
+  margin-left: 9px;
+  padding-top: 13px;
+}
+.b-help .block-2 .content-1 p {
+  margin-top: 14px;
+}
+.b-help .block-2 .content-2 {
+  margin-top: 42px;
+}
+.b-help .block-2 .content-2 p {
+  margin-top: -5px;
+}
+.b-help .block-2 .content-2 p:first-of-type {
+  margin-top: 20px;
+}
+
+/* Оформляем блок внутри b-help > block-1 > content-2 */
+.money-transfer {
+  /* Натягиваем бэкграунд на всю ширину block-1 */
+  margin-left: -38px;
+  padding-left: 38px;
+  height: 64px;
+  margin-top: 18px;
+  vertical-align: middle;
+  background-color: #daead4;
+}
+.money-transfer:before {
+  /* Выравниваем блок по центру */
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.money-transfer .text,
+.money-transfer form {
+  display: inline-block;
+}
+.money-transfer .text {
+  margin-left: -5px;
+}
+.money-transfer .number {
+  width: 100px;
+  height: 35px;
+  margin-left: 10px;
+  padding: 0 5px;
+}
+.money-transfer .btn-flat {
+  width: 130px;
+  height: 35px;
+  margin-left: 10px;
+  color: #ffffff;
+  border: 0;
+  background-color: #6bae52;
+  font-size: 14px;
+}
+
+.b-souvenir {
+  padding-top: 73px;
+  padding-bottom: 70px;
+  /* Растягивает бэкграунд двух блоков  */
+  background-color: #e5e5e5;
+  font-size: 16px;
+}
+.b-souvenir .title {
+  width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 20px;
+}
+.b-souvenir .title h3 {
+  position: relative;
+  font-size: 28px;
+}
+.b-souvenir .title h3:before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: -3px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  vertical-align: bottom;
+  background: url(/img/ruble-icon.png) no-repeat;
+  background-size: cover;
+}
+.b-souvenir [class^="good-"] {
+  float: left;
+  width: 201px;
+  margin-top: 17px;
+  margin-left: 25px;
+}
+.b-souvenir .good-1 {
+  margin-left: 0;
+}
+.b-souvenir .good-1 p,
+.b-souvenir .good-2 p,
+.b-souvenir .good-3 p {
+  margin-top: 25px;
+}
+.b-souvenir .good-text {
+  width: 230px;
+  margin-left: 54px;
+}
+.b-souvenir .good-text p {
+  margin-top: 10px;
+}
+
+.b-tell-about-us {
+  margin-top: 53px;
+  color: #ffffff;
+  /* Делаем соц. иконки большие, переопределяем классы yashare */
+}
+.b-tell-about-us .banner {
+  position: relative;
+}
+.b-tell-about-us .banner .caption-wrapper {
+  position: absolute;
+  padding: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.b-tell-about-us .banner .caption-content {
+  position: relative;
+  padding-left: 39px;
+  padding-right: 25px;
+  padding-bottom: 14px;
+  text-align: left;
+  letter-spacing: .4px;
+}
+.b-tell-about-us .banner .caption-content h3 {
+  padding-right: 210px;
+  font-weight: 700;
+}
+.b-tell-about-us .banner .caption-content p {
+  padding-right: 210px;
+  font-size: 18px;
+  line-height: 18px;
+}
+.b-tell-about-us .banner .caption-content .btn-help {
+  position: absolute;
+  right: 42px;
+  top: 14px;
+  padding: 11px 40px;
+  background-color: #ffdf5c;
+  border-radius: 0;
+  font-weight: 700;
+  color: #131313;
+}
+.b-tell-about-us .share {
+  position: relative;
+  width: 780px;
+  margin: 0 auto;
+  margin-top: 23px;
+  text-align: center;
+  line-height: 20px;
+  color: #131313;
+}
+.b-tell-about-us .share h2 {
+  position: relative;
+  display: inline-block;
+  margin-top: 47px;
+  font-size: 44px;
+  z-index: 99;
+}
+.b-tell-about-us .share h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  background-color: #ffdf5c;
+  z-index: -1;
+}
+.b-tell-about-us .share p {
+  font-size: 20px;
+}
+.b-tell-about-us .share p:last-of-type {
+  margin-top: 37px;
+}
+.b-tell-about-us .ya-share-block {
+  margin-top: 40px;
+}
+.b-tell-about-us .b-share {
+  height: 90px;
+}
+.b-tell-about-us .b-share-icon {
+  margin-left: 20px;
+}
+.b-tell-about-us .b-share-icon_vkontakte {
+  margin-left: 4px;
+  /* у первого блока другой отступ */
+  background: url('/img/icons-s11a4ce4c51.png') -696px 0;
+  width: 80px;
+  height: 76px;
+}
+.b-tell-about-us .b-share-icon_odnoklassniki {
+  background: url('/img/icons-s11a4ce4c51.png') -476px 0;
+  width: 83px;
+  height: 77px;
+}
+.b-tell-about-us .b-share-icon_twitter {
+  background: url('/img/icons-s11a4ce4c51.png') -564px 0;
+  width: 78px;
+  height: 75px;
+}
+.b-tell-about-us .b-share-icon_facebook {
+  background: url('/img/icons-s11a4ce4c51.png') -131px 0;
+  width: 78px;
+  height: 75px;
+}
+
+/* Footer */
+footer {
+  margin-top: 71px;
+  background-color: #e5e5e5;
+}
+
+.b-footer-info {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.b-footer-info .rights,
+.b-footer-info .authors {
+  margin-top: 44px;
+  box-sizing: border-box;
+  float: left;
+  height: 226px;
+  /* height + margin-top + .hr-line = 280px */
+  width: 50%;
+}
+.b-footer-info .rights {
+  padding-top: 1px;
+}
+.b-footer-info .rights p {
+  margin-top: 16px;
+  color: #808080;
+}
+.b-footer-info .authors {
+  padding-left: 50px;
+  line-height: 18px;
+}
+.b-footer-info .authors .authors-list li {
+  list-style: none;
+}
+.b-footer-info .authors .authors-list li:nth-of-type(2) {
+  margin-top: 10px;
+}
+.b-footer-info .authors .authors-list li:nth-of-type(7) {
+  margin-top: 39px;
+}
+.b-footer-info .authors .authors-list li:last-of-type {
+  margin-top: 10px;
+}
+.b-footer-info .authors .authors-list li:last-of-type a {
+  text-transform: uppercase;
+}
+.b-footer-info .authors .authors-list li span {
+  color: #808080;
+}
+
+.b-footer-list {
+  height: 70px;
+  margin-top: 2px;
+  padding: 0;
+  font-size: 16px;
+  letter-spacing: .4px;
+}
+.b-footer-list:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.b-footer-list li {
+  display: inline-block;
+  margin-left: 108px;
+  list-style: none;
+}
+.b-footer-list li:first-of-type {
+  margin-left: -5px;
+  vertical-align: middle;
+}
+.b-footer-list li:nth-of-type(2) {
+  width: 287px;
+  margin-left: 8px;
+}
+.b-footer-list li:last-of-type {
+  margin-left: 260px;
+}
+.b-footer-list .copyright {
+  color: #808080;
+}

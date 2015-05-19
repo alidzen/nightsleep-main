@@ -1,0 +1,66 @@
+/*=====================================
+   Base styles. Задаем переменные, заголовки, body и прочее  по умолчанию.
+===================================== */
+html,
+body { height: 100%; }
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  background-color: $color-bg-main;
+  color: $color-font-main;
+  font-weight: $font-weight-regular;
+  font-size: $font-M;
+  font-family: $font-family-text;
+  line-height: 18px;
+}
+
+a { color: $color-font-3; }
+
+li { list-style: none; }
+
+.inner-wrapper,
+.inner-wrapper-header {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.inner-wrapper { padding: 0 99px; }
+
+.wrapper-fix { /* Прижимает footer */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -350px;
+}
+
+.wrapper-fix__push, 
+footer {
+  height: 350px;
+} 
+
+%clearfix { /* Fix для float элементов */
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after { clear: both; }
+}
+
+
+/* Декоративные элементы */
+.noactive-color { /* тусклый цвет */
+  color: $color-font-2; 
+} 
+.hr-line {
+  width: 100%;
+  border-top: 1px solid #dedede;
+}
+
+
+
+/*
+* END Base styles.
+*
+*/

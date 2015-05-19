@@ -1,0 +1,50 @@
+.b-souvenir {
+  @extend %clearfix;
+  padding-top: 73px;
+  padding-bottom: 70px; /* Растягивает бэкграунд двух блоков  */
+  background-color: $color-bg-header;
+  font-size: $font-M;
+  .title {
+    width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+    h3 {
+      position: relative;
+      font-size: $font-XL-bigger;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 18px;
+        top: -3px;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        vertical-align: bottom;
+        background: url(/img/ruble-icon.png) no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  [class^="good-"] {
+    float: left;
+    width: 201px;
+    margin-top: 17px;
+    margin-left: 25px;
+  }
+  .good-1 {
+    margin-left: 0;
+  }
+  .good-1,
+  .good-2,
+  .good-3 {
+    p {
+      margin-top: 25px;
+    }
+  }
+  .good-text {
+    width: 230px;
+    margin-left: 54px;
+    p { margin-top: 10px; }
+  }
+}

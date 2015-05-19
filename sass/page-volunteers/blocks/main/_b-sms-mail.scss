@@ -1,0 +1,16 @@
+.b-sms-mail {
+  margin-top: 57px;
+  margin-right: 388px;
+  h3 { font-size: $font-XL-bigger; }
+  p {
+    &:first-of-type { 
+      margin-top: 17px;
+      font-size: $font-M;
+      line-height: inherit;
+    }
+    font-size: $font-SL;
+    line-height: 17px;
+    letter-spacing: .1px;
+    &:last-of-type { margin-top: 17px; }
+  }
+}

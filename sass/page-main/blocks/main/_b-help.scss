@@ -1,0 +1,118 @@
+/* Задаем общие стили для блоков */
+
+.b-help {
+  @extend %clearfix;
+  margin-top: 70px;
+  padding-top: 32px; /* Растягивает бэкграунд двух блоков вверх */
+  font-size: $font-L;
+  background-color: $color-bg-header;
+  .title {
+    position: relative;
+    width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+    h1 {
+      position: relative;
+      display: inline-block;
+      font-size: $font-XXXL;
+      z-index: 99;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        display: inline-block;
+        width: 100%;
+        height: 10px;
+        background-color: $color-3;
+        z-index: -1;
+      }
+    }
+  }
+  h3 {
+    font-size: $font-XL-bigger;
+  }
+  [class^="block-"] {
+    float: left;
+    box-sizing: border-box;
+    width: 478px;
+    height: 563px;
+    margin-top: 44px;
+    padding-top: 10px;
+    padding-left: 38px;
+  }
+  .block-1 {
+    border: 3px solid $color-2-light;
+    background-color: $color-white;
+    .contetn-1 {
+      margin-top: 5px;
+    }
+    .content-2 {
+      margin-top: 35px;
+      img {
+        margin-top: 10px;
+      }
+    }
+    .content-2>p {
+      margin-top: 26px;
+      line-height: 22px;
+    }
+  }
+  .block-2 {
+    margin-left: 9px;
+    padding-top: 13px;
+    .content-1 {
+      p {
+        margin-top: 14px;
+      }
+    }
+    .content-2 {
+      margin-top: 42px;
+      p { margin-top: -5px; }
+      p:first-of-type { margin-top: 20px; }
+    }
+  }
+}
+/* Оформляем блок внутри b-help > block-1 > content-2 */
+
+.money-transfer {
+  /* Натягиваем бэкграунд на всю ширину block-1 */
+  
+  margin-left: -38px;
+  padding-left: 38px;
+  height: 64px;
+  margin-top: 18px;
+  vertical-align: middle;
+  background-color: $color-bg-1;
+  &:before {
+    /* Выравниваем блок по центру */
+    
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .text,
+  form {
+    display: inline-block;
+  }
+  .text {
+    margin-left: -5px;
+  }
+  .number {
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+    padding: 0 5px;
+  }
+  .btn-flat {
+    width: 130px;
+    height: 35px;
+    margin-left: 10px;
+    color: $color-white;
+    border: 0;
+    background-color: $color-2-light;
+    font-size: $font-SL;
+  }
+}

@@ -1,0 +1,89 @@
+/* Задаем общие стили для блоков */
+.b-features {
+  margin-top: 41px;
+  h1 {
+    font-size: $font-XXl;
+    text-transform: uppercase;
+  }
+  article { @extend %clearfix; }
+  img { float: left; }
+}
+
+.b-features>article:not(first-of-type) {
+  margin-top: 39px;
+}
+
+.features-content {
+  margin-top: 22px;
+  padding-top: 28px;
+  padding-bottom: 23px;
+  border-top: 1px dashed $color-font-2;
+  border-bottom: 1px dashed $color-font-2;
+  p { font-size: $font-M; }
+}
+
+.features-content-text>a,
+.features-content-text>span>a,
+.features-content-text>span { 
+  display: inline-block;
+  margin-top: 9px;
+  font-size: $font-ML; 
+  letter-spacing: -.3px;
+}
+
+.features-content-text {
+  margin-left: 350px;
+  margin-top: -22px;
+  margin-right: 58px;
+  line-height: 19px;
+  letter-spacing: .18px;
+  h2 { font-size: $font-XL; }
+  p:last-of-type { margin-top: 27px; }
+}
+
+.other-places {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: $font-M;
+  letter-spacing: .25px;
+}
+
+/* Вносим корректировки в отдельные блоки */
+.feature-3 .features-content-text {
+  p:last-of-type { margin-top: 64px; }
+}
+
+.feature-4 {
+  .features-content-text { margin-top: -20px; }
+  .other-places { margin-top: 21px; }
+}
+
+.feature-4 .features-content-text>span,
+.feature-4 .features-content-text>span>a {
+  margin-top: 0;
+}
+
+.feature-4 .features-content-text>span {
+  &:first-of-type { margin-top: 10px; }
+}
+
+.feature-5 {
+  .features-content-text {
+    p:last-of-type { margin-top: 64px; }
+  }
+  .other-places { margin-top: 27px; }
+}
+
+.places {
+  padding-top: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed $color-font-2;
+ /* &:first-of-type {
+    border-top: 1px dashed $color-font-2;
+  }*/
+  font-size: $font-M;
+  h2 {
+    font-size: $font-XL;
+  }
+}
+

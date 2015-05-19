@@ -1,0 +1,34 @@
+.b-header-title {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  h1 {
+    position: relative;
+    display: inline-block;
+    margin-top: 47px;
+    font-size: $font-XXXL;
+    z-index: 99;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      display: inline-block;
+      width: 100%;
+      height: 10px;
+      background-color: #ffe36e;
+      z-index: -1;
+    }
+    
+  }
+  p {
+    font-size: $font-M;
+    color: $color-font-2;
+  }
+  a { 
+    display: block;
+    margin-top: -6px;
+    font-size: $font-M; 
+  }
+}

@@ -1,0 +1,108 @@
+.b-tell-about-us {
+  margin-top: 53px;
+  color: $color-white;
+  .banner {
+    position: relative;
+    .caption-wrapper {
+      position: absolute;
+      padding: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(#000, .5);
+    }
+    .caption-content {
+      position: relative;
+      padding-left: 39px;
+      padding-right: 25px;
+      padding-bottom: 14px;
+      text-align: left;
+      letter-spacing: .4px;
+      h3 {
+        padding-right: 210px;
+        font-weight: $font-weight-bold;
+      }
+      p {
+        padding-right: 210px;
+        font-size: $font-L;
+        line-height: 18px;
+      }
+      .btn-help {
+        position: absolute;
+        right: 42px;
+        top: 14px;
+        padding: 11px 40px;
+        background-color: $color-3;
+        border-radius: 0;
+        font-weight: $font-weight-bold;
+        color: $color-font-main;
+      }
+    }
+  }
+  .share {
+    position: relative;
+    width: 780px;
+    margin: 0 auto;
+    margin-top: 23px;
+    text-align: center;
+    line-height: 20px;
+    color: $color-font-main;
+    h2 {
+      position: relative;
+      display: inline-block;
+      margin-top: 47px;
+      font-size: $font-XXXL;
+      z-index: 99;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        display: inline-block;
+        width: 100%;
+        height: 10px;
+        background-color: $color-3;
+        z-index: -1;
+      }
+    }
+    p {
+      font-size: $font-L-bigger;
+      &:last-of-type { margin-top: 37px; }
+    }
+  }
+  
+  .ya-share-block {
+    margin-top: 40px;
+  }
+  /* Делаем соц. иконки большие, переопределяем классы yashare */
+  
+  .b-share {
+    height: 90px;
+  }
+  .b-share-icon {
+    margin-left: 20px;
+  }
+  .b-share-icon_vkontakte {
+    margin-left: 4px;
+    /* у первого блока другой отступ */
+    
+    background: sprite($icons, vk-yashare);
+    width: sprite-width($icons, vk-yashare);
+    height: sprite-height($icons, vk-yashare);
+  }
+  .b-share-icon_odnoklassniki {
+    background: sprite($icons, odnokl-yashare);
+    width: sprite-width($icons, odnokl-yashare);
+    height: sprite-height($icons, odnokl-yashare);
+  }
+  .b-share-icon_twitter {
+    background: sprite($icons, tw-yashare);
+    width: sprite-width($icons, tw-yashare);
+    height: sprite-height($icons, tw-yashare);
+  }
+  .b-share-icon_facebook {
+    background: sprite($icons, fb-yashare);
+    width: sprite-width($icons, fb-yashare);
+    height: sprite-height($icons, fb-yashare);
+  }
+}

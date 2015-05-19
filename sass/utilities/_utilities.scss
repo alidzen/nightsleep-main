@@ -1,0 +1,78 @@
+/* =====================================
+   Utilities.
+==================================== */
+
+/* Спрайты */
+
+$icons: sprite-map("icons/*.png", $spacing: 5px, $layout: horizontal);
+
+.social,
+.arrow-left,
+.arrow-right,
+.mail-icon,
+.icon {
+  display: block;
+}
+
+.fb-header {
+  width: sprite-width($icons, fb-header);
+  height: sprite-height($icons, fb-header);
+  background: sprite($icons, fb-header);
+}
+
+.vk-header {
+  width: sprite-width($icons, vk-header);
+  height: sprite-height($icons, vk-header);
+  background: sprite($icons, vk-header);
+}
+
+.inst-header {
+  width: sprite-width($icons, inst-header);
+  height: sprite-height($icons, inst-header);
+  background: sprite($icons, inst-header);
+}
+
+.flag-rus {
+  width: sprite-width($icons, flag-rus);
+  height: sprite-height($icons, flag-rus);
+  background: sprite($icons, flag-rus);  
+}
+
+.vk-color {
+  width: sprite-width($icons, vk-color);
+  height: sprite-height($icons, vk-color);
+  background: sprite($icons, vk-color);
+}
+
+.fb-color {
+  width: sprite-width($icons, fb-color);
+  height: sprite-height($icons, fb-color);
+  background: sprite($icons, fb-color);
+}
+
+.inst-color {
+  width: sprite-width($icons, inst-color);
+  height: sprite-height($icons, inst-color);
+  background: sprite($icons, inst-color);
+}
+
+.arrow-left {
+  border-radius: 50%;
+  width: sprite-width($icons, arrow-left);
+  height: sprite-height($icons, arrow-left);
+  background: sprite($icons, arrow-left);
+}
+
+.arrow-right {
+  border-radius: 50%;
+  width: sprite-width($icons, arrow-right);
+  height: sprite-height($icons, arrow-right);
+  background: sprite($icons, arrow-right);
+}
+
+.mail-icon {
+  width: 42px;
+  height: 42px;
+  background: url('/img/icons-s171e2ca784.png') -366px 0;
+  background-size: cover;
+}

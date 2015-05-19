@@ -1,0 +1,30 @@
+.b-last-news {
+  @extend %clearfix;
+  margin-top: 33px;
+  font-size: $font-M;
+  
+  h3 { font-size: $font-XL-bigger; }
+  
+  [class^="news-"] {
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 260px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 27px;
+    p {
+      line-height: 20px;
+      &:first-of-type {
+        margin-top: 5px;
+      }
+    }
+    .date {
+      position: absolute;
+      left: 2px;
+      bottom: 3px;
+    }
+  }
+  
+  .news-1 { margin-left: 0; }
+}

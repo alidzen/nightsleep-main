@@ -1,0 +1,44 @@
+.b-nav {
+  width: 100%;
+  background-color: $color-bg-header;
+  background-size: cover;
+}
+
+.nav-list {
+  height: 50px;
+  font-size: $font-SL;
+  color: $color-font-main;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  li {
+    display: inline-block;
+    .active { color: $color-font-2; }
+    &:first-of-type {
+      margin-left: 13px;
+      color: $color-white;
+    }
+    &:nth-child(2) { margin-left: 100px; }
+    &:nth-child(3) { margin-left: 93px; }
+    &:nth-child(4) { margin-left: 79px; }
+    &:nth-child(5) { margin-left: 78px; }
+    &:nth-child(6) { margin-left: 85px; }
+    
+     /* соц. сети */
+    .social {
+      margin-left: 2px;
+      margin-bottom: -7px;
+      border-radius: 50%;
+    }
+    .fb-header { margin-left: 65px; }    
+
+    a {
+      color: $color-font-main;
+      text-transform: uppercase;
+      font-weight: $font-weight-bold;
+    }
+  }
+}

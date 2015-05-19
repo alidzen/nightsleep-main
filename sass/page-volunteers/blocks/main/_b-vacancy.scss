@@ -1,0 +1,33 @@
+.b-vacancy {
+  margin-top: 41px;
+  font-size: $font-M;
+  .header {
+    padding-bottom: 26px;
+    border-bottom: 1px dashed $color-font-2;
+    h1 { 
+      display: block;
+      font-size: $font-XL-bigger;
+      letter-spacing: .2px;
+    }
+    .tumbler {
+      display: inline-block;
+      margin-top: 9px;
+      a:first-of-type {
+        color: $color-font-main;
+      }
+    }
+  }
+  p {
+    &:first-of-type { margin-top: 12px; }
+    padding-bottom: 11px;
+    line-height: 23px;
+    border-bottom: 1px dashed $color-font-2;
+    letter-spacing: .2px;
+    &:last-of-type {
+      margin-top: 18px;
+      border: none;
+    }
+    span { color: $color-font-2; }
+  }
+  
+}

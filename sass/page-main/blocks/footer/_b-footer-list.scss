@@ -1,0 +1,28 @@
+.b-footer-list {
+  height: 70px;
+  margin-top: 2px;
+  padding: 0;
+  font-size: $font-M;
+  letter-spacing: .4px;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  li {
+    display: inline-block;
+    margin-left: 108px;
+    list-style: none;
+    &:first-of-type { 
+      margin-left: -5px;
+      vertical-align: middle;
+    }
+    &:nth-of-type(2) { 
+      width: 287px;
+      margin-left: 8px; 
+    }
+    &:last-of-type { margin-left: 260px; }
+  }
+  .copyright { color: $color-font-2; }
+}

@@ -1,0 +1,59 @@
+.b-slider-header {
+  margin-top: 20px;
+  .carousel-inner {
+    height: 400px;
+  }
+  .carousel-caption {
+    padding: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(#000, .5);
+  }
+  
+  .caption-content {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .caption-content--with-btn {
+    position: relative;
+    padding-left: 39px;
+    padding-right: 25px;
+    text-align: left;
+    letter-spacing: .4px;
+    h3 {
+      padding-right: 250px;
+      font-weight: $font-weight-bold;
+    }
+    p {
+      padding-right: 250px;
+      font-size: $font-L;
+    }
+    .btn-help {
+      position: absolute;
+      right: 42px;
+      top: 14px;
+      padding: 11px 51px;
+      background-color: $color-2-light;
+      border-radius: 0;
+      font-weight: $font-weight-bold;
+      color: $color-bg-main;
+    }
+  }
+  .carousel-control.right,
+  .carousel-control.left {
+    background-image: none;
+  }
+  .carousel-control {
+    width: auto;
+    opacity: 1;
+    .arrow {
+      position: relative;
+      top: 200px;
+      margin-top: -18px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}

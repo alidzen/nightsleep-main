@@ -1,0 +1,26 @@
+.b-popular {
+  margin-top: 62px;
+  font-size: $font-M;
+  h1 { 
+    padding-bottom: 14px;
+    font-size: $font-XL-bigger;
+    border-bottom: 1px dashed $color-font-2;
+  }
+  p {
+    &:first-of-type { margin-top: -14px; }
+    padding-bottom: 14px;
+    line-height: 19px;
+    border-bottom: 1px dashed $color-font-2;
+    &:last-of-type {
+      margin-top: 22px;
+      border: none;
+    }
+  }
+}
+
+.b-popular {
+  .answer>p {
+    border: none;
+  }
+}
+

@@ -1,0 +1,31 @@
+.b-unit-features {
+  @extend %clearfix;
+  [class^="feature-block-"] {
+    float: left;
+    width: 320px;
+    height: 190px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid $color-3;
+    font-size: $font-M;
+    padding: 2px 21px 0;
+    }
+  
+  .feature-block-1 {
+    h3 { padding-bottom: 26px; }
+  }
+  
+  .feature-block-1,
+  .feature-block-4 {
+    margin-left: 0;
+  }
+  
+  .feature-block-6 {
+    border-color: #dedede;
+  }
+    
+    h3 {
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+  }
+}

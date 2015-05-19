@@ -1,0 +1,36 @@
+/* Compass */
+@import "compass";
+
+/* Base */
+//@import "base/_reset";
+@import "base/_settings.scss";
+@import "base/_base.scss";
+@import "base/_fonts.scss";
+@import "base/_boot-modified.scss"; /* changed bootstrap classes */
+
+/* Utilities */
+@import "utilities/_utilities.scss";
+
+/* Blocks */
+/* HEader */
+@import "page-main/blocks/header/_b-header-banner.scss";
+@import "page-main/blocks/header/_b-nav.scss";
+@import "page-main/blocks/header/_b-header-title.scss";
+@import "page-main/blocks/header/_b-slider-header.scss";
+
+
+/* Main */
+@import "page-main/blocks/main/_b-main-title.scss";
+@import "page-main/blocks/main/_b-unit-features.scss";
+@import "page-main/blocks/main/_b-activities.scss";
+@import "page-main/blocks/main/_b-last-news.scss";
+@import "page-main/blocks/main/_b-subscribe.scss";
+@import "page-main/blocks/main/_b-help.scss";
+@import "page-main/blocks/main/_b-souvenir.scss";
+@import "page-main/blocks/main/_b-tell-about-us.scss";
+
+/* Footer */
+@import "page-main/blocks/footer/_b-footer-info.scss";
+@import "page-main/blocks/footer/_b-footer-list.scss";
+
+
