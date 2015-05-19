@@ -11,7 +11,6 @@
   }
   form {
     margin-top: 11px;
-    //    margin-left: 35px;
     input, button {
       color: $color-font-main;
       border-radius: 0;
@@ -36,8 +35,9 @@
   }
   .form {
     .navbar-text {
+      margin-top: 10px;
       font-size: $font-L;
-      line-height: 11px;
+      line-height: 16px;
       span {
         font-size: $font-M;
       }
