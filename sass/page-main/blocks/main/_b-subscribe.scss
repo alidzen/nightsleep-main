@@ -3,45 +3,42 @@
   margin-top: 37px;
   padding: 10px 0;
   border: 1px solid #e6e6e6;
-  
   .mail-icon {
-    margin-top: 0;
+    margin-top: 11px;
     margin-left: 25px;
+    margin-right: 0;
   }
-  
-  .subscribe {
+  form {
+    margin-top: 11px;
+//    margin-left: 35px;
+    input, button {
+      color: $color-font-main;
+      border-radius: 0;
+    }
+    .form-control {
+      width: 271px;
+      height: 44px;
+      margin-left: 55px;
+      border: 1px solid #b3b3b3;
+    }
+    button {
+      width: 160px;
+      height: 44px;
+      margin-left: 14px;
+      font-weight: $font-weight-bold;
+      border: none;
+      background-color: $color-3;
+    }
+  }
+  .form {
     .navbar-text {
       font-size: $font-L;
       line-height: 11px;
-      span { font-size: $font-M; }
-    }
-    form {
-      margin-top: 2px;
-      margin-left: 35px;
-      
-      input,
-      button {
-        color: $color-font-main;
-        border-radius: 0;
-      }
-      
-      input {
-        width: 271px;
-        height: 44px;
-        border: 1px solid #b3b3b3;
-      }
-      
-      button {
-        width: 160px;
-        height: 44px;
-        margin-left: 14px;
-        font-weight: $font-weight-bold;
-        border: none;
-        background-color: $color-3;
+      span {
+        font-size: $font-M;
       }
     }
   }
-  
   .success {
     display: none;
   }

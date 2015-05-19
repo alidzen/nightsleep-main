@@ -8,7 +8,6 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
   <title>Главная</title>
 </head>
 
@@ -297,29 +296,31 @@
 
       <section class="b-subscribe">
         <div class="mail-icon navbar-text"></div>
-        <div class="subscribe">
-          <p class="navbar-text">
-            Одно письмо в неделю о жизни Ночлежки
-            <br>
-            <span class="noactive-color">
+
+        <form class="navbar-form navbar-left" action="temp.json" method="post" data-def="true">
+          <div class="form">
+            <p class="navbar-text">
+              Одно письмо в неделю о жизни Ночлежки
+              <br>
+              <span class="noactive-color">
              только с главными новостями
            </span>
-          </p>
-          <form class="navbar-form navbar-left" action="temp.json" method="post" data-def="true">
+            </p>
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Ваша электронная почта">
             </div>
             <button type="submit" class="btn btn-default">Подписаться</button>
-            <div class="success">
-              Спасибо! Мы будем держать вас в курсе жизни «Ночлежки»
-            </div>
-            <div class="error">
-              Что-то пошло не так... Попробуйте позже.
-            </div>
+          </div>
+          <!-- / form -->
+          <div class="success navbar-text">
+            Спасибо! Мы будем держать вас в курсе жизни «Ночлежки»
+          </div>
+          <div class="error navbar-text">
+            Что-то пошло не так... Попробуйте позже.
+          </div>
 
-          </form>
-        </div>
-        <!-- / subscribe -->
+        </form>
+
 
 
       </section>
