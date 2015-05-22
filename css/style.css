@@ -107,22 +107,22 @@ footer {
 */
 @font-face {
   font-family: "Helvetica";
-  src: url("../fonts/HelveticaRegular.eot");
-  src: url("../fonts/HelveticaRegular.woff") format("woff"), url("../fonts/HelveticaRegular.ttf") format("truetype"), url("../fonts/HelveticaRegular.svg") format("svg");
+  src: url("/fonts/HelveticaRegular.eot");
+  src: url("/fonts/HelveticaRegular.woff") format("woff"), url("/fonts/HelveticaRegular.ttf") format("truetype"), url("/fonts/HelveticaRegular.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Helvetica";
-  src: url("../fonts/HelveticaBold.eot");
-  src: url("../fonts/HelveticaBold.woff") format("woff"), url("../fonts/HelveticaBold.ttf") format("truetype"), url("../fonts/HelveticaBold.svg") format("svg");
+  src: url("/fonts/HelveticaBold.eot");
+  src: url("/fonts/HelveticaBold.woff") format("woff"), url("/fonts/HelveticaBold.ttf") format("truetype"), url("/fonts/HelveticaBold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Helvetica";
-  src: url("../fonts/HelveticaLight.eot");
-  src: url("../fonts/HelveticaLight.woff") format("woff"), url("../fonts/HelveticaLight.ttf") format("truetype"), url("../fonts/HelveticaLight.svg") format("svg");
+  src: url("/fonts/HelveticaLight.eot");
+  src: url("/fonts/HelveticaLight.woff") format("woff"), url("/fonts/HelveticaLight.ttf") format("truetype"), url("/fonts/HelveticaLight.svg") format("svg");
   font-weight: 300;
   font-style: normal;
 }
@@ -152,63 +152,63 @@ footer {
 .fb-header {
   width: 22px;
   height: 22px;
-  background: url('../img/icons-s11a4ce4c51.png') -104px 0;
+  background: url('/img/icons-s11a4ce4c51.png') -104px 0;
 }
 
 .vk-header {
   width: 22px;
   height: 22px;
-  background: url('../img/icons-s11a4ce4c51.png') -669px 0;
+  background: url('/img/icons-s11a4ce4c51.png') -669px 0;
 }
 
 .inst-header {
   width: 22px;
   height: 22px;
-  background: url('../img/icons-s11a4ce4c51.png') -306px 0;
+  background: url('/img/icons-s11a4ce4c51.png') -306px 0;
 }
 
 .flag-rus {
   width: 30px;
   height: 20px;
-  background: url('../img/icons-s11a4ce4c51.png') -249px 0;
+  background: url('/img/icons-s11a4ce4c51.png') -249px 0;
 }
 
 .vk-color {
   width: 17px;
   height: 17px;
-  background: url('../img/icons-s11a4ce4c51.png') -647px 0;
+  background: url('/img/icons-s11a4ce4c51.png') -647px 0;
 }
 
 .fb-color {
   width: 17px;
   height: 17px;
-  background: url('../img/icons-s11a4ce4c51.png') -82px 0;
+  background: url('/img/icons-s11a4ce4c51.png') -82px 0;
 }
 
 .inst-color {
   width: 17px;
   height: 17px;
-  background: url('../img/icons-s11a4ce4c51.png') -284px 0;
+  background: url('/img/icons-s11a4ce4c51.png') -284px 0;
 }
 
 .arrow-left {
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  background: url('../img/icons-s11a4ce4c51.png') 0 0;
+  background: url('/img/icons-s11a4ce4c51.png') 0 0;
 }
 
 .arrow-right {
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  background: url('../img/icons-s11a4ce4c51.png') -41px 0;
+  background: url('/img/icons-s11a4ce4c51.png') -41px 0;
 }
 
 .mail-icon {
   width: 42px;
   height: 42px;
-  background: url("../img/icons-s11a4ce4c51.png") -577px 0;
+  background: url("/img/icons-s11a4ce4c51.png") -577px 0;
   background-size: cover;
 }
 
@@ -694,7 +694,7 @@ footer {
   width: 35px;
   height: 35px;
   vertical-align: bottom;
-  background: url(../img/ruble-icon.png) no-repeat;
+  background: url(/img/ruble-icon.png) no-repeat;
   background-size: cover;
 }
 .b-souvenir [class^="good-"] {
@@ -808,22 +808,22 @@ footer {
 .b-tell-about-us .b-share-icon_vkontakte {
   margin-left: 4px;
   /* у первого блока другой отступ */
-  background: url('../img/icons-s11a4ce4c51.png') -696px 0;
+  background: url('/img/icons-s11a4ce4c51.png') -696px 0;
   width: 80px;
   height: 76px;
 }
 .b-tell-about-us .b-share-icon_odnoklassniki {
-  background: url('../img/icons-s11a4ce4c51.png') -476px 0;
+  background: url('/img/icons-s11a4ce4c51.png') -476px 0;
   width: 83px;
   height: 77px;
 }
 .b-tell-about-us .b-share-icon_twitter {
-  background: url('../img/icons-s11a4ce4c51.png') -564px 0;
+  background: url('/img/icons-s11a4ce4c51.png') -564px 0;
   width: 78px;
   height: 75px;
 }
 .b-tell-about-us .b-share-icon_facebook {
-  background: url('../img/icons-s11a4ce4c51.png') -131px 0;
+  background: url('/img/icons-s11a4ce4c51.png') -131px 0;
   width: 78px;
   height: 75px;
 }
